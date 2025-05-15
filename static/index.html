@@ -86,7 +86,9 @@
     <ul class="todo-list" id="todoList"></ul>
 
     <script>
-        const apiUrl = 'http://18.171.185.48:8000/todos/';
+        // Serverni Ip siga o'zgartiring
+        const ServerIP = '18.171.185.48';
+        const apiUrl = `http://${ServerIP}:8000/todos/`;
 
         async function fetchTodos() {
             try {
